@@ -14,9 +14,10 @@ Raw phosphoproteomics matrices contained compound feature identifiers and wide-f
 idx                                      111      114
 ENSG00000003056.8|ENSP00000000412.3|S267|DDQLGEESEERDDHL|1
 # After Cleaning
-# Parsed and Standardized Format
-gene_id         protein_id      site    sample_111_T
-ENSG00000003056 ENSP00000000412 S267    23.95
+ Parsed and Standardized Format
+<img width="596" height="92" alt="Scr" src="https://github.com/user-attachments/assets/1e7bc575-a483-494c-923f-ac0ca238b06a" />
+
+
 Challenges before cleaning:
 - Compound feature annotations
 - Numeric sample labels
