@@ -7,4 +7,13 @@ The project integrates:
 - Proteomics (protein abundance)
 - Transcriptomics (RNA-seq expression)
 - Matched tumor/normal samples
-The pipeline transforms raw omics matrices into standardized, analysis-ready datasets suitable for downstream statistical and machine-learning workflows.
+The pipeline transforms raw omics matrices into standardized and analysis-ready datasets suitable for downstream statistical and machine-learning workflows.
+# Example of Raw Data
+Raw phosphoproteomics matrices contained compound feature identifiers and wide-format sample matrices.
+# Before Cleaning
+idx                                      111      114
+ENSG00000003056.8|ENSP00000000412.3|S267|DDQLGEESEERDDHL|1
+# After Cleaning
+# Parsed and Standardized Format
+gene_id         protein_id      site    sample_111_T
+ENSG00000003056 ENSP00000000412 S267    23.95
