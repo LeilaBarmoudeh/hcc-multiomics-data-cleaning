@@ -11,8 +11,8 @@ The pipeline transforms raw omics matrices into standardized and analysis-ready 
 # Example of Raw Data
 Raw phosphoproteomics matrices contained compound feature identifiers and wide-format sample matrices.
 # Before Cleaning
-idx                                      111      114
-ENSG00000003056.8|ENSP00000000412.3|S267|DDQLGEESEERDDHL|1
+<img width="686" height="311" alt="Scr" src="https://github.com/user-attachments/assets/92326d4a-62a6-4b95-a561-2b615303c806" />
+
 # After Cleaning
  Parsed and Standardized Format
 <img width="596" height="92" alt="Scr" src="https://github.com/user-attachments/assets/1e7bc575-a483-494c-923f-ac0ca238b06a" />
