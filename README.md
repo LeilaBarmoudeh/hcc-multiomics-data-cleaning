@@ -58,12 +58,14 @@ def main():
     rnaseq = clean_rnaseq(
         "data/raw_examples/rnaseq_raw_mock.csv"
     )
+cleaned = harmonize_samples(phospho, protein, rnaseq)
 
-    cleaned = harmonize_samples(phospho, protein, rnaseq)
-for name, df in cleaned.items():
+    for name, df in cleaned.items():
         df.to_csv(
             f"data/processed_examples/{name}_cleaned.csv",
             index=False
         )
+
+
 if __name__ == "__main__":
     main()
