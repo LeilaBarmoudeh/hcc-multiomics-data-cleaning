@@ -65,7 +65,5 @@ for name, df in cleaned.items():
             f"data/processed_examples/{name}_cleaned.csv",
             index=False
         )
-
-
 if __name__ == "__main__":
     main()
