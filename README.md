@@ -39,4 +39,33 @@ Python via Jupyter
 - scipy
   # Data Availability
 Original patient-level datasets are not included due to privacy and data-sharing restrictions.
+# Example of Python pipline
+from src.clean_phosphoproteomics import clean_phospho
+from src.clean_proteomics import clean_protein
+from src.clean_rnaseq import clean_rnaseq
+from src.harmonize_samples import harmonize_samples
 
+
+def main():
+    phospho = clean_phospho(
+        "data/raw_examples/phosphoproteomics_raw_mock.csv"
+    )
+
+    protein = clean_protein(
+        "data/raw_examples/proteomics_raw_mock.csv"
+    )
+
+    rnaseq = clean_rnaseq(
+        "data/raw_examples/rnaseq_raw_mock.csv"
+    )
+
+    cleaned = harmonize_samples(phospho, protein, rnaseq)
+for name, df in cleaned.items():
+        df.to_csv(
+            f"data/processed_examples/{name}_cleaned.csv",
+            index=False
+        )
+
+
+if __name__ == "__main__":
+    main()
