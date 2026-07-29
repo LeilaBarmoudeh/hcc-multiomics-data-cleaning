@@ -24,6 +24,7 @@ Challenges before cleaning:
 - Missing values
 - Non-standardized metadata
 - Multi-layer sample alignment
+  
 Improvements:
 - Structured metadata columns
 - Harmonized sample identifiers
